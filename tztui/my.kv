@@ -1,0 +1,49 @@
+<MyGrid>:
+
+    name:name
+    email:email
+    imsi: imsi
+    plmn:plmn
+    imei: imei
+
+    GridLayout:
+        cols: 1
+        size: root.width-200, root.height-200
+        pos: 100, 100
+
+        GridLayout:
+            cols: 4
+            Label:
+                text: "Radio"
+            TextInput:
+                id: name
+                multiline: False
+
+            Label:
+                text: "imsi"
+            TextInput:
+                id: imsi
+                multiline: False
+
+            Label:
+                text: "plmn"
+            TextInput:
+                id: plmn
+                multiline: False
+
+            Label:
+                text: "imei"
+            TextInput:
+                id: imei
+                multiline: False
+
+            Label:
+                text: "scan status"
+            TextInput:
+                id: email
+                multiline: False
+
+
+        Button:
+            text: "Submit"
+            on_press: root.btn()
