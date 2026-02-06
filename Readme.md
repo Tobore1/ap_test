@@ -1,0 +1,1 @@
+The app is done and you have to run the main kivymd app.
